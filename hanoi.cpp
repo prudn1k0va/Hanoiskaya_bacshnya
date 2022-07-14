@@ -9,4 +9,9 @@ void hanoi(int num, char from, char to, char buff)
         hanoi(num - 1, buff, to, from);
     }
 }
-int main() {}
+int main() {
+    int num;
+    std::cin >> num;
+    hanoi(num, 'A', 'B', 'C');
+    return 0;
+}
